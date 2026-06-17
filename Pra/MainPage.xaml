@@ -9,9 +9,15 @@
         <Grid BackgroundColor="#40C95A"
               HeightRequest="80"
               Padding="15,10">
+            <Image Source="logo.png"
+                   HeightRequest="370"
+                   WidthRequest="400"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+
             <Label Text="Главная"
                    TextColor="White"
-                   FontSize="30"
+                   FontSize="58"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontFamily="Finlandica"/>
@@ -24,9 +30,19 @@
 
 
                 <Border StrokeThickness="0"
-                        BackgroundColor="#DDE7D8"
-                       Padding="20"
-                        >
+                        WidthRequest="450"
+                        HeightRequest="100">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20" />
+                    </Border.StrokeShape>
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,0">
+                            <GradientStop Color="#BFFEA8" Offset="0" />
+                            <GradientStop Color="#C2EF46" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
 
                     <VerticalStackLayout Spacing="15">
                         <Label Text="Процесс"
@@ -34,12 +50,15 @@
                                HorizontalOptions="Center"
                                TextColor="#333"
                                FontFamily="Finlandica"/>
+                        <ScrollView>
+                            <ProgressBar x:Name="MyProgressBar"
+                                         Progress="0.5"
+                                         WidthRequest="400"
+                                         HeightRequest="10"
+                                         HorizontalOptions="Fill"
+                                         ProgressColor="Green"/>
+                        </ScrollView>
 
-                        <ProgressBar Progress="0.7"
-                                     HeightRequest="50"
-                                     WidthRequest="60"
-                                     ProgressColor="#B2E22B"
-                                     BackgroundColor="#EAEAEA"/>
                     </VerticalStackLayout>
 
                 </Border>
@@ -48,8 +67,9 @@
                 <Grid ColumnDefinitions="120,*">
 
 
-                    <Image Source="giraf.png"
-                           HeightRequest="320"
+                    <Image Source="gir.png"
+                           HeightRequest="370"
+                           WidthRequest="400"
                            VerticalOptions="End"/>
 
 
@@ -73,7 +93,8 @@
                                FontSize="48"
                                TextColor="#40C95A"
                                HorizontalTextAlignment="Center"
-                               FontFamily="Finlandica"/>
+                               FontFamily="Finlandica"
+                               FontAttributes="Bold"/>
 
                         <Button Text="START"
                                 FontSize="55"
@@ -84,11 +105,10 @@
                                 HeightRequest="90"
                                 WidthRequest="250"
                                 HorizontalOptions="Center"
-                                FontFamily="Finlandica"/>
+                                FontFamily="Finlandica"
+                                Clicked="OnButtonClicked"/>
                     </VerticalStackLayout>
-
                 </Grid>
-
             </VerticalStackLayout>
         </ScrollView>
     </Grid>
