@@ -9,9 +9,21 @@
         <Grid BackgroundColor="#40C95A"
               HeightRequest="80"
               Padding="15,10">
+<<<<<<< HEAD
             <Label Text="Главная"
                    TextColor="White"
                    FontSize="30"
+=======
+            <Image Source="logo.png"
+                   HeightRequest="370"
+                   WidthRequest="400"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+
+            <Label Text="Главная"
+                   TextColor="White"
+                   FontSize="58"
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontFamily="Finlandica"/>
@@ -24,9 +36,25 @@
 
 
                 <Border StrokeThickness="0"
+<<<<<<< HEAD
                         BackgroundColor="#DDE7D8"
                        Padding="20"
                         >
+=======
+                        WidthRequest="450"
+                        HeightRequest="100">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20" />
+                    </Border.StrokeShape>
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,0">
+                            <GradientStop Color="#BFFEA8" Offset="0" />
+                            <GradientStop Color="#C2EF46" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
 
                     <VerticalStackLayout Spacing="15">
                         <Label Text="Процесс"
@@ -34,12 +62,24 @@
                                HorizontalOptions="Center"
                                TextColor="#333"
                                FontFamily="Finlandica"/>
+<<<<<<< HEAD
 
                         <ProgressBar Progress="0.7"
                                      HeightRequest="50"
                                      WidthRequest="60"
                                      ProgressColor="#B2E22B"
                                      BackgroundColor="#EAEAEA"/>
+=======
+                        <ScrollView>
+                            <ProgressBar x:Name="MyProgressBar"
+                                         Progress="0.5"
+                                         WidthRequest="400"
+                                         HeightRequest="10"
+                                         HorizontalOptions="Fill"
+                                         ProgressColor="Green"/>
+                        </ScrollView>
+
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
                     </VerticalStackLayout>
 
                 </Border>
@@ -48,8 +88,14 @@
                 <Grid ColumnDefinitions="120,*">
 
 
+<<<<<<< HEAD
                     <Image Source="giraf.png"
                            HeightRequest="320"
+=======
+                    <Image Source="gir.png"
+                           HeightRequest="370"
+                           WidthRequest="400"
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
                            VerticalOptions="End"/>
 
 
@@ -73,7 +119,12 @@
                                FontSize="48"
                                TextColor="#40C95A"
                                HorizontalTextAlignment="Center"
+<<<<<<< HEAD
                                FontFamily="Finlandica"/>
+=======
+                               FontFamily="Finlandica"
+                               FontAttributes="Bold"/>
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
 
                         <Button Text="START"
                                 FontSize="55"
@@ -84,11 +135,18 @@
                                 HeightRequest="90"
                                 WidthRequest="250"
                                 HorizontalOptions="Center"
+<<<<<<< HEAD
                                 FontFamily="Finlandica"/>
                     </VerticalStackLayout>
 
                 </Grid>
 
+=======
+                                FontFamily="Finlandica"
+                                Clicked="OnButtonClicked"/>
+                    </VerticalStackLayout>
+                </Grid>
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
             </VerticalStackLayout>
         </ScrollView>
     </Grid>

@@ -9,6 +9,7 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+<<<<<<< HEAD
 
             <Color x:Key="Dark">#383939</Color>
             <Color x:Key="Emerald">#149C68</Color>
@@ -16,6 +17,8 @@
             <Color x:Key="AcidGreen">#AEE637</Color>
             <Color x:Key="Cream">#FFFEDB</Color>
             
+=======
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
         </ResourceDictionary>
     </Application.Resources>
 </Application>

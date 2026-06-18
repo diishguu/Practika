@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pra.NewPage1"
+             Title="NewPage1">
+    
+    <VerticalStackLayout>
+        <Grid BackgroundColor="#40C95A"
+              HeightRequest="80"
+              Padding="15,10">
+
+            <Image Source="logo.png"
+           HeightRequest="370"
+           WidthRequest="400"
+           VerticalOptions="Start"
+           HorizontalOptions="Start"/>
+
+            <Label Text="Обучение"
+           TextColor="White"
+           FontSize="58"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           FontFamily="Finlandica"/>
+        </Grid>
+        
+        <VerticalStackLayout>
+
+            <Border StrokeThickness="0"
+                    WidthRequest="450"
+                    HeightRequest="140"
+                    Margin="30 0 0 0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20" />
+                </Border.StrokeShape>
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0"
+                                         EndPoint="1,0">
+                        <GradientStop Color="#BFFEA8" Offset="0" />
+                        <GradientStop Color="#C2EF46" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Учим слова"
+                           FontSize="58"
+                           HorizontalOptions="Center"
+                           TextColor="#333"
+                           FontFamily="Finlandica"/>
+                    <Label Text="44 Темы"
+                           FontSize="18"
+                           HorizontalOptions="Center"
+                           TextColor="#333"
+                           FontFamily="Finlandica"/>
+                    <ScrollView>
+                        <ProgressBar x:Name="MyProgressBar"
+                                     Progress="0.3"
+                                     WidthRequest="400"
+                                     HorizontalOptions="Fill"
+                                     ProgressColor="Green"/>
+                    </ScrollView>
+                </VerticalStackLayout>
+            </Border>
+            
+            <VerticalStackLayout>
+                <Border StrokeThickness="0"
+                        WidthRequest="450"
+                        HeightRequest="140"
+                        Margin="30 0 0 0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20" />
+                    </Border.StrokeShape>
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                                             EndPoint="1,0">
+                            <GradientStop Color="#BFFEA8" Offset="0" />
+                            <GradientStop Color="#C2EF46" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="Учим правила"
+                               FontSize="58"
+                               HorizontalOptions="Center"
+                               TextColor="#333"
+                               FontFamily="Finlandica"/>
+                        <Label Text="28 Правил"
+                               FontSize="18"
+                               HorizontalOptions="Center"
+                               TextColor="#333"
+                               FontFamily="Finlandica"/>
+                        <ScrollView>
+                            <ProgressBar  Progress="0.3"
+                                          WidthRequest="400"
+                                          HorizontalOptions="Fill"
+                                          ProgressColor="Green"/>
+                        </ScrollView>
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+            
+            <VerticalStackLayout>
+
+                <Border StrokeThickness="0"
+                        WidthRequest="450"
+                        HeightRequest="140"
+                        Margin="30 0 0 0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20" />
+                    </Border.StrokeShape>
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                                             EndPoint="1,0">
+                            <GradientStop Color="#BFFEA8" Offset="0" />
+                            <GradientStop Color="#C2EF46" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="Произношение"
+                               FontSize="58"
+                               HorizontalOptions="Center"
+                               TextColor="#333"
+                               FontFamily="Finlandica"/>
+                        <Label Text="40 тем"
+                               FontSize="18"
+                               HorizontalOptions="Center"
+                               TextColor="#333"
+                               FontFamily="Finlandica"/>
+                        <ScrollView>
+                            <ProgressBar Progress="0.3"
+                                         WidthRequest="400"
+                                         HorizontalOptions="Fill"
+                                         ProgressColor="Green"/>
+                        </ScrollView>
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+            
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

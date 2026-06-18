@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <Project Sdk="Microsoft.NET.Sdk">
+=======
+﻿<Project Sdk="Microsoft.NET.Sdk">
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
 
 	<PropertyGroup>
 		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
@@ -62,24 +66,38 @@
 	</ItemGroup>
 
 	<ItemGroup>
+<<<<<<< HEAD
 	  <MauiXaml Update="Pages\Profile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\RepeatPage.xaml">
+=======
+	  <MauiXaml Update="NewPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Profile.xaml">
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Slovar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+<<<<<<< HEAD
 	  <MauiXaml Update="Pages\StatisticsPage.xaml">
+=======
+	  <MauiXaml Update="Stats.xaml">
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
 
+<<<<<<< HEAD
 	<ItemGroup>
 	  <Compile Update="Pages\StatisticsPage.xaml.cs">
 	    <DependentUpon>StatisticsPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
+=======
+>>>>>>> 8fa396d472d8e8d82f14a2907d154935dce92fef
 </Project>
