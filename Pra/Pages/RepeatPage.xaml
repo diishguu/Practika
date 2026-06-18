@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pra.Pages.RepeatPage"
+             Title="RepeatPage"
+             BackgroundColor="{StaticResource Cream}">
+    <Grid RowDefinitions="Auto, *, Auto, Auto,2*"
+          Padding="20" RowSpacing="16">
+        <!--Заголовок и счётчик-->
+        <Grid Grid.Row="0" ColumnDefinitions="*,Auto">
+            <Label Text="Повторение" FontSize="28" FontAttributes="Bold"
+                   TextColor="{StaticResource Dark}"
+                   VerticalOptions="Center"/>
+            <Border Grid.Column="1" BackgroundColor="{StaticResource Emerald}"
+                    StrokeShape="RoundRectangle 20" Stroke="Transparent"
+                    Padding="14, 6">
+                <Label Text="5 / 20 " TextColor="{StaticResource Cream}"
+                       FontAttributes="Bold" FontSize="14"/>
+            </Border>
+        </Grid>
+        <!--Карточка слова-->
+        <Border Grid.Row="1" BackgroundColor="{StaticResource Emerald}"
+                StrokeShape="RoundRectangle 24" Stroke="Transparent">
+            <Grid RowDefinitions="*,Auto,Auto,*">
+                <Label Grid.Row="1" Text="Adventure" FontSize="40"
+                       FontAttributes="Bold" TextColor="{StaticResource Cream}"
+                       HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Text="Нажмите, чтобы увидеть перевод" FontSize="14"
+                       TextColor="{StaticResource Cream}" Opacity="0.85"
+                       Margin="0,8,0,0"
+                       HorizontalOptions="Center"/>
+            </Grid>
+        </Border>
+    </Grid>
+   
+            
+</ContentPage>

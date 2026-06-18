@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pra.Pages.StatisticsPage"
+             Title="Статистика"
+             BackgroundColor="{StaticResource Cream}">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="16">
+            <Label Text="Сатистика" FontSize="28"
+               FontAttributes="Bold"
+               TextColor="{StaticResource Dark}"/>
+
+            <!--Серия-->
+            <Border BackgroundColor="{StaticResource LightGreen}"
+                StrokeShape="RoundRectangle 20"
+                Stroke="Transparent"
+                Padding="18">
+                <Grid ColumnDefinitions="Auto, *">
+                    <Label Text="🔥" FontSize="34" VerticalOptions="Center"/>
+                    <VerticalStackLayout Grid.Column="1" Margin="14, 0, 0, 0" Spacing="2">
+                        <Label Text="7 дней подряд" FontSize="20" FontAttributes="Bold"
+                           TextColor="{StaticResource Dark}"/>
+                        <Label Text="Так держать!" FontSize="20" FontAttributes="Bold"
+                           TextColor="{StaticResource Dark}"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+            <!--метрики-->
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="12">
+                <Border Background="{StaticResource Emerald}"
+                    StrokeShape="RoundRectangle 18"
+                    Stroke="Transparent"
+                    Padding="16">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="342" FontSize="30" FontAttributes="Bold"
+                           TextColor="{StaticResource Dark}"/>
+                        <Label Text="Изучено слов" FontSize="13"
+                           TextColor="{StaticResource Cream}" Opacity="0.7"/>
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="1" BackgroundColor="{StaticResource LightGreen}"
+                    StrokeShape="RoundRectangle 18"
+                    Stroke="Transparent"
+                    Padding="16">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="87%" FontSize="30" FontAttributes="Bold"
+                            TextColor="{StaticResource Dark}"/>
+                        <Label Text="Пройдено" FontSize="13" FontAttributes="Bold"
+                           TextColor="{StaticResource Dark}"
+                           Opacity="0.7"/>
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+            <!--Активность-->
+            <Border BackgroundColor="White" StrokeShape="RoundRectangle 18"
+                Stroke="Transparent"
+                Padding="16">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Активность за неделю" FontSize="16" FontAttributes="Bold"
+                       TextColor="{StaticResource Dark}"/>
+                    <Grid HeightRequest="120" ColumnDefinitions="*,*,*,*,*,*,*"
+                      ColumnSpacing="8">
+                        <Border Grid.Column="0" HeightRequest="70" VerticalOptions="End"
+                            BackgroundColor="{StaticResource LightGreen}"
+                            StrokeShape="roundRectangle 6"
+                            Stroke="Transparent"/>
+                        <Border Grid.Column="1" HeightRequest="70" VerticalOptions="End"
+                            BackgroundColor="{StaticResource LightGreen}"
+                            StrokeShape="roundRectangle 6"
+                            Stroke="Transparent"/>
+                        <Border Grid.Column="2" HeightRequest="70" VerticalOptions="End"
+                            BackgroundColor="{StaticResource LightGreen}"
+                            StrokeShape="roundRectangle 6"
+                            Stroke="Transparent"/>
+                        <Border Grid.Column="3" HeightRequest="70" VerticalOptions="End"
+                            BackgroundColor="{StaticResource LightGreen}"
+                            StrokeShape="roundRectangle 6"
+                            Stroke="Transparent"/>
+                        <Border Grid.Column="4" HeightRequest="70" VerticalOptions="End"
+                            BackgroundColor="{StaticResource LightGreen}"
+                            StrokeShape="roundRectangle 6"
+                            Stroke="Transparent"/>
+                        <Border Grid.Column="5" HeightRequest="70" VerticalOptions="End"
+                            BackgroundColor="{StaticResource LightGreen}"
+                            StrokeShape="roundRectangle 6"
+                            Stroke="Transparent"/>
+                        <Border Grid.Column="6" HeightRequest="70" VerticalOptions="End"
+                            BackgroundColor="{StaticResource LightGreen}"
+                            StrokeShape="roundRectangle 6"
+                            Stroke="Transparent"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="*,*,*,*,*,*,*" ColumnSpacing="8">
+                        <Label Grid.Column="0" Text="Пн" FontSize="12" HorizontalOptions="Center" TextColor="{StaticResource Dark}"></Label>
+                        <Label Grid.Column="1" Text="Вт" FontSize="12" HorizontalOptions="Center" TextColor="{StaticResource Dark}"></Label>
+                        <Label Grid.Column="2" Text="Ср" FontSize="12" HorizontalOptions="Center" TextColor="{StaticResource Dark}"></Label>
+                        <Label Grid.Column="3" Text="Чт" FontSize="12" HorizontalOptions="Center" TextColor="{StaticResource Dark}"></Label>
+                        <Label Grid.Column="4" Text="Пт" FontSize="12" HorizontalOptions="Center" TextColor="{StaticResource Dark}"></Label>
+                        <Label Grid.Column="5" Text="Сб" FontSize="12" HorizontalOptions="Center" TextColor="{StaticResource Dark}"></Label>
+                        <Label Grid.Column="6" Text="Вс" FontSize="12" HorizontalOptions="Center" TextColor="{StaticResource Dark}"></Label>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
